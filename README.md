@@ -19,10 +19,6 @@
 
 ## Архитектура
 
-## Архитектура
-
-## Архитектура
-
 Playwright Scraper → PostgreSQL ← FastAPI REST API → User (Browser)
 
 ## Структура проекта
