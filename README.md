@@ -19,6 +19,9 @@
 
 ## Архитектура
 
+## Архитектура
+
+\`\`\`text
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
 │  Playwright │────▶│  PostgreSQL  │◀────│   FastAPI    │
 │  Scraper    │     │  (Docker)    │     │   REST API   │
@@ -29,9 +32,13 @@
                     │    User     │
                     │  (Browser)  │
                     └─────────────┘
+\`\`\`
 
 ## Структура проекта
 
+## Структура проекта
+
+\`\`\`
 job-scraping-platform/
 ├── api/            # эндпоинты FastAPI
 ├── db/             # модели SQLAlchemy
@@ -44,6 +51,7 @@ job-scraping-platform/
 ├── Dockerfile
 ├── docker-compose.yml
 └── .github/        # CI/CD
+\`\`\`
 
 ## Установка и запуск
 
