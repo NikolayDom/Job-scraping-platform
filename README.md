@@ -21,37 +21,13 @@
 
 ## Архитектура
 
-\`\`\`text
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  Playwright │────▶│  PostgreSQL  │◀────│   FastAPI    │
-│  Scraper    │     │  (Docker)    │     │   REST API   │
-└─────────────┘     └─────────────┘     └─────────────┘
-                           │
-                           ▼
-                    ┌─────────────┐
-                    │    User     │
-                    │  (Browser)  │
-                    └─────────────┘
-\`\`\`
+## Архитектура
+
+Playwright Scraper → PostgreSQL ← FastAPI REST API → User (Browser)
 
 ## Структура проекта
 
-## Структура проекта
-
-\`\`\`
-job-scraping-platform/
-├── api/            # эндпоинты FastAPI
-├── db/             # модели SQLAlchemy
-├── scrapers/       # скраперы (Playwright)
-├── alembic/        # миграции базы данных
-├── logs/           # логи
-├── app.py          # точка входа FastAPI
-├── config.py       # настройки
-├── logger.py       # логирование
-├── Dockerfile
-├── docker-compose.yml
-└── .github/        # CI/CD
-\`\`\`
+api/ (эндпоинты) → db/ (модели) → scrapers/ (Playwright) → alembic/ (миграции) → logs/ (логи) → app.py → config.py → logger.py → Dockerfile → docker-compose.yml → .github/ (CI/CD)
 
 ## Установка и запуск
 
